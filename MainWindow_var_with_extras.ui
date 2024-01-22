@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>344</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Database of Marine Ships</string>
+  </property>
+  <property name="windowOpacity">
+   <double>0.980000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0 rgba(81, 0, 135, 255), stop:0.427447 rgba(41, 61, 132, 235), stop:1 rgba(155, 79, 165, 255));
+font-family: Noto Sans SC</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>521</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="styleSheet">
+      <string notr="true">color: white;
+font-weight: bold;
+font-size: 20pt;
+background-color: none;
+border: none;</string>
+     </property>
+     <property name="text">
+      <string>Database of Marine Ships</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 30);
+border-radius: 10px;</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="turn_to_emp">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+background-color: rgba(255, 255, 255, 30);
+border: 1px solid rgba(255, 255, 255, 40);
+border-radius: 10px;
+width: 230px;
+height: 50px;
+font: 10pt;
+}
+
+QPushButton:hover {
+color: black;
+background-color: rgba(0, 0, 0, 30);
+border: 1px solid rgba(0, 0, 0, 40);
+}
+
+QPushButton:pressed {
+color: black;
+background-color: rgba(0, 0, 0, 80);
+border: 1px solid rgba(0, 0, 0, 90);
+}</string>
+        </property>
+        <property name="text">
+         <string>Employees</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resourses.qrc">
+          <normaloff>:/icons/icons/emp.png</normaloff>:/icons/icons/emp.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="turn_to_costs">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+background-color: rgba(255, 255, 255, 30);
+border: 1px solid rgba(255, 255, 255, 40);
+border-radius: 10px;
+width: 230px;
+height: 50px;
+font: 10pt;
+}
+
+QPushButton:hover {
+color: black;
+background-color: rgba(0, 0, 0, 30);
+border: 1px solid rgba(0, 0, 0, 40);
+}
+
+QPushButton:pressed {
+color: black;
+background-color: rgba(0, 0, 0, 80);
+border: 1px solid rgba(0, 0, 0, 90);
+}</string>
+        </property>
+        <property name="text">
+         <string>Cost of details</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resourses.qrc">
+          <normaloff>:/icons/icons/price.svg</normaloff>:/icons/icons/price.svg</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="turn_to_dep_proj">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+background-color: rgba(255, 255, 255, 30);
+border: 1px solid rgba(255, 255, 255, 40);
+border-radius: 10px;
+width: 230px;
+height: 50px;
+font: 10pt;
+}
+
+QPushButton:hover {
+color: black;
+background-color: rgba(0, 0, 0, 30);
+border: 1px solid rgba(0, 0, 0, 40);
+}
+
+QPushButton:pressed {
+color: black;
+background-color: rgba(0, 0, 0, 80);
+border: 1px solid rgba(0, 0, 0, 90);
+}</string>
+        </property>
+        <property name="text">
+         <string>What projects are
+ departments working on</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resourses.qrc">
+          <normaloff>:/icons/icons/workin.svg</normaloff>:/icons/icons/workin.svg</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="turn_to_details">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+background-color: rgba(255, 255, 255, 30);
+border: 1px solid rgba(255, 255, 255, 40);
+border-radius: 10px;
+width: 230px;
+height: 50px;
+font: 10pt;
+}
+
+QPushButton:hover {
+color: black;
+background-color: rgba(0, 0, 0, 30);
+border: 1px solid rgba(0, 0, 0, 40);
+}
+
+QPushButton:pressed {
+color: black;
+background-color: rgba(0, 0, 0, 80);
+border: 1px solid rgba(0, 0, 0, 90);
+}</string>
+        </property>
+        <property name="text">
+         <string>Details</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resourses.qrc">
+          <normaloff>:/icons/icons/handyman_FILL0_wght400_GRAD0_opsz24.png</normaloff>:/icons/icons/handyman_FILL0_wght400_GRAD0_opsz24.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="turn_to_quantity">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+background-color: rgba(255, 255, 255, 30);
+border: 1px solid rgba(255, 255, 255, 40);
+border-radius: 10px;
+width: 230px;
+height: 50px;
+font: 10pt;
+}
+
+QPushButton:hover {
+color: black;
+background-color: rgba(0, 0, 0, 30);
+border: 1px solid rgba(0, 0, 0, 40);
+}
+
+QPushButton:pressed {
+color: black;
+background-color: rgba(0, 0, 0, 80);
+border: 1px solid rgba(0, 0, 0, 90);
+}</string>
+        </property>
+        <property name="text">
+         <string>Quantity of details
+in Design Offices</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resourses.qrc">
+          <normaloff>:/icons/icons/quantity.svg</normaloff>:/icons/icons/quantity.svg</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="turn_to_work_type">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+background-color: rgba(255, 255, 255, 30);
+border: 1px solid rgba(255, 255, 255, 40);
+border-radius: 10px;
+width: 230px;
+height: 50px;
+font: 10pt;
+}
+
+QPushButton:hover {
+color: black;
+background-color: rgba(0, 0, 0, 30);
+border: 1px solid rgba(0, 0, 0, 40);
+}
+
+QPushButton:pressed {
+color: black;
+background-color: rgba(0, 0, 0, 80);
+border: 1px solid rgba(0, 0, 0, 90);
+}</string>
+        </property>
+        <property name="text">
+         <string>What type of work
+ Design Offices do</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resourses.qrc">
+          <normaloff>:/icons/icons/question_mark_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/icons/icons/question_mark_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="turn_to_fac">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+background-color: rgba(255, 255, 255, 30);
+border: 1px solid rgba(255, 255, 255, 40);
+border-radius: 10px;
+width: 230px;
+height: 50px;
+font: 10pt;
+}
+
+QPushButton:hover {
+color: black;
+background-color: rgba(0, 0, 0, 30);
+border: 1px solid rgba(0, 0, 0, 40);
+}
+
+QPushButton:pressed {
+color: black;
+background-color: rgba(0, 0, 0, 80);
+border: 1px solid rgba(0, 0, 0, 90);
+}</string>
+        </property>
+        <property name="text">
+         <string>Factories</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resourses.qrc">
+          <normaloff>:/icons/icons/factory_FILL0_wght400_GRAD0_opsz24.png</normaloff>:/icons/icons/factory_FILL0_wght400_GRAD0_opsz24.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>12</width>
+          <height>12</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="turn_to_dep">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+background-color: rgba(255, 255, 255, 30);
+border: 1px solid rgba(255, 255, 255, 40);
+border-radius: 10px;
+width: 230px;
+height: 50px;
+font: 10pt;
+}
+
+QPushButton:hover {
+color: black;
+background-color: rgba(0, 0, 0, 30);
+border: 1px solid rgba(0, 0, 0, 40);
+}
+
+QPushButton:pressed {
+color: black;
+background-color: rgba(0, 0, 0, 80);
+border: 1px solid rgba(0, 0, 0, 90);
+}</string>
+        </property>
+        <property name="text">
+         <string>Departments</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resourses.qrc">
+          <normaloff>:/icons/icons/segment_FILL0_wght400_GRAD0_opsz24.png</normaloff>:/icons/icons/segment_FILL0_wght400_GRAD0_opsz24.png</iconset>
+        </property>
+        <property name="autoRepeatDelay">
+         <number>300</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="turn_to_des_off">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+background-color: rgba(255, 255, 255, 30);
+border: 1px solid rgba(255, 255, 255, 40);
+border-radius: 10px;
+width: 230px;
+height: 50px;
+font: 10pt;
+}
+
+QPushButton:hover {
+color: black;
+background-color: rgba(0, 0, 0, 30);
+border: 1px solid rgba(0, 0, 0, 40);
+}
+
+QPushButton:pressed {
+color: black;
+background-color: rgba(0, 0, 0, 80);
+border: 1px solid rgba(0, 0, 0, 90);
+}</string>
+        </property>
+        <property name="text">
+         <string>Design Offices</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resourses.qrc">
+          <normaloff>:/icons/icons/source_environment_FILL0_wght400_GRAD0_opsz24.png</normaloff>:/icons/icons/source_environment_FILL0_wght400_GRAD0_opsz24.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="turn_to_proj">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777211</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+background-color: rgba(255, 255, 255, 30);
+border: 1px solid rgba(255, 255, 255, 40);
+border-radius: 10px;
+width: 230px;
+height: 50px;
+font: 10pt;
+}
+
+QPushButton:hover {
+color: black;
+background-color: rgba(0, 0, 0, 30);
+border: 1px solid rgba(0, 0, 0, 40);
+}
+
+QPushButton:pressed {
+color: black;
+background-color: rgba(0, 0, 0, 80);
+border: 1px solid rgba(0, 0, 0, 90);
+}</string>
+        </property>
+        <property name="text">
+         <string>Projects</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resourses.qrc">
+          <normaloff>:/icons/icons/directions_boat_FILL0_wght400_GRAD0_opsz24.png</normaloff>:/icons/icons/directions_boat_FILL0_wght400_GRAD0_opsz24.png</iconset>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_total">
+          <property name="styleSheet">
+           <string notr="true">color: white;
+background-color: rgba(255, 255, 255, 40);
+font: bold 9pt;
+padding-left: 3px</string>
+          </property>
+          <property name="text">
+           <string>Total cost of
+all projects:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="total_show">
+          <property name="styleSheet">
+           <string notr="true">color: white;
+background-color: rgba(255, 255, 255, 40);
+font: bold 9pt;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resourses.qrc"/>
+ </resources>
+ <connections/>
+</ui>

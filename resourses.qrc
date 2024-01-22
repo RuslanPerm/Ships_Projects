@@ -1,0 +1,21 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/price.svg</file>
+    <file>icons/quantity.svg</file>
+    <file>icons/question_mark_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>icons/workin.svg</file>
+    <file>icons/add_FILL0_wght400_GRAD0_opsz24.png</file>
+    <file>icons/back.png</file>
+    <file>icons/close_FILL0_wght400_GRAD0_opsz24.png</file>
+    <file>icons/delete_FILL0_wght400_GRAD0_opsz24.png</file>
+    <file>icons/directions_boat_FILL0_wght400_GRAD0_opsz24.png</file>
+    <file>icons/done.png</file>
+    <file>icons/edit_FILL0_wght400_GRAD0_opsz24.png</file>
+    <file>icons/emp.png</file>
+    <file>icons/factory_FILL0_wght400_GRAD0_opsz24.png</file>
+    <file>icons/handyman_FILL0_wght400_GRAD0_opsz24.png</file>
+    <file>icons/logout_FILL0_wght400_GRAD0_opsz24.png</file>
+    <file>icons/segment_FILL0_wght400_GRAD0_opsz24.png</file>
+    <file>icons/source_environment_FILL0_wght400_GRAD0_opsz24.png</file>
+  </qresource>
+</RCC>
